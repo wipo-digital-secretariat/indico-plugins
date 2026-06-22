@@ -74,6 +74,7 @@ class RHWebhook(RH):
         'payload': fields.Dict(required=True)
     }, unknown=EXCLUDE)
     def _process(self, event, payload):
+        current_plugin.logger.debug('Received Zoom webhook: event=%s, payload=%s', event, payload)
         if self._is_validation_event(event):
             return self._handle_validation(payload)
         return self._handle_zoom_event(event, payload)
