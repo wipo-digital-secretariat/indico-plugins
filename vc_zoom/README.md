@@ -20,6 +20,7 @@
 - Sync existing registrants of large events in the background when enabling auto-registration and
   avoid Zoom lookups for unrelated registrants when syncing a single registration
 - Fix removing more than 30 registrants from Zoom at once
+- Fix webinar registrants synced one at a time staying pending approval in Zoom
 
 ### 3.3.7
 
